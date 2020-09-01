@@ -1,15 +1,15 @@
-#include<iostream>
+#include<iostream> //implementation of linear search using C++
 #include<conio.h>
 using namespace std;
 int main()
 {
-	int arr[50],i,n,flag,item;
+	int arr[50],n,item,flag;
+	int i;
 	cout<<"Enter the number of Elements:";
 	cin>>n;
-	cout<<"Enter the Elements in Array\n";
 	for(i=0;i<n;i++)
 	{
-		cout<<"Enter the element for ["<<i<<"]:";
+		cout<<"Enter the value for ["<<i<<"]:";
 		cin>>arr[i];
 	}
 	cout<<"Enter the item to search:";
@@ -24,12 +24,14 @@ int main()
 	}
 	if(flag==1)
 	{
-		cout<<item<<" is found in the location no "<<i+1<<endl;
+		cout<<item<<" is present in the location "<<i+1<<endl;
 	}
 	else
 	{
-		cout<<item<<" not found"<<endl;
+		cout<<item<<" is not present"<<endl;
 	}
-	getch();
+	
+	getch()
+	;
 	return 0;
 }
